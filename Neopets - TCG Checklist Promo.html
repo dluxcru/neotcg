@@ -1,0 +1,691 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "//www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0053)https://www.neopets.com/tcg/checklist.phtml?edition=5 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="description" content="Neopets.Com - Virtual Pet Community! Join up for free games, shops, auctions, chat and more!">
+	<meta name="keywords" content="pets, pet, games, game, virtual, chat, fun, prizes, play, virtual pet, kids">
+	<meta name="robots" content="noodp, index, follow">
+	<meta http-equiv="X-UA-Compatible" content="IE=8">
+	
+
+	<link rel="stylesheet" type="text/css" href="./Neopets - TCG Checklist Promo_files/default.css">
+	<link rel="stylesheet" type="text/css" href="./Neopets - TCG Checklist Promo_files/ad.css">
+
+	<style type="text/css">td.neoaswc img {vertical-align: top;}</style>	<style type="text/css">
+
+	.centeredOverlay {
+		position: absolute;
+		background-color: rgba(0, 0, 0, 0.3);
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+		color:black;
+		text-align: center;
+	}
+	</style>
+
+	<link rel="stylesheet" type="text/css" href="./Neopets - TCG Checklist Promo_files/046_ff_sep2017.css">
+
+			
+	<title>Neopets - TCG Checklist</title>
+	<script async="" src="./Neopets - TCG Checklist Promo_files/fbds.js.download"></script><script id="js-framework" type="text/javascript" language="JavaScript" src="./Neopets - TCG Checklist Promo_files/common.js.download"></script>
+
+			<script src="./Neopets - TCG Checklist Promo_files/jquery-1.7.1.min.js.download" type="text/javascript"></script>
+	<script src="./Neopets - TCG Checklist Promo_files/jquery-ui-1.8.17.min.js.download" type="text/javascript"></script>
+	
+	
+	<script type="text/javascript">
+	var Neo = {
+		clog: function() {
+			if (window.console && console.log) {
+				if (arguments.length == 0) {
+					console.log('! no arguments passed !');
+				} else if (arguments.length == 1) {
+					console.log(arguments[0]);
+				} else {
+				console.log(arguments);
+			}
+		}
+		},
+		popups: {
+			list: [],
+			add: function(popup) {
+				Neo.popups.list.push(popup);
+				Neo.fade.show();
+			},
+			rem: function(popup) {
+				for (var i = Neo.popups.list.length - 1; i >= 0; i--) {
+					var curPopup = Neo.popups.list[i];
+					Neo.clog(i, popup, curPopup, popup == curPopup);
+					if (curPopup == popup) {
+						Neo.popups.list.splice(i, 1);
+					}
+				}
+				if (Neo.popups.list.length == 0) {
+					Neo.fade.hide();
+				}
+			},
+			remAll: function() {
+				Neo.popups.list = [];
+				Neo.fade.hide();
+			}
+		},
+		fade: {
+			show: function() {
+				$('#neoFade').show();
+			},
+			hide: function() {
+				$('#neoFade').hide();
+			}
+		},
+		setNp: function(newnp) {
+			$('#npanchor').text(newnp);
+		},
+		setNc: function(newnc) {
+			Neo.clog('lol', newnc);
+			$('#ncanchor').text(newnc);
+		},
+		precache: function(url) {
+			if ($.isArray(url)) {
+				for (var i = 0; i < url.length; i++) {
+					new Image().src = url[i];
+				}
+			} else {
+				new Image().src = url;
+			}
+		}
+	};
+	</script>
+	<style type="text/css">
+		#neoFade { display: none; position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; opacity: 0.5; background: black; filter: alpha(opacity=50); z-index: 9500; }
+	</style>
+
+	<script id="js-browserdetect" type="text/javascript" language="JavaScript" src="./Neopets - TCG Checklist Promo_files/getbrowser.js.download">
+
+	</script>
+
+	<!--
+	<script id="js-browserdetect2" type="text/javascript" language="JavaScript" src="https://images.neopets.com/js/getbrowser_new.js">
+	</script> -->
+
+<script type="text/javascript" src="./Neopets - TCG Checklist Promo_files/n.js.download"></script>
+	<script type="text/javascript">
+	<!--
+	var nl = "en";
+	var nh = 10;
+	var nm = 0;
+	var ns = 57;
+	var na = "pm";
+	var ncl = new Array(0, 53, 104, 137, 169, 198, 231, 265, 299, 335, 368, 397, 427);
+
+	window.setInterval('nc()', 1000);
+
+	function sh(i) {
+		ol.style.clip = "rect("+ncl[i-1]+" 128 "+ncl[i]+" 0)";
+		ol.style.visibility = "visible";
+	}
+
+	function mo() {
+		ol.style.visibility = "hidden";
+	}
+
+	function search_handle(searchForm) {
+		searchForm.action = "/search.phtml";
+		searchForm.target = "";
+		searchForm.method = "post";
+		searchForm.s.value = searchForm.q.value;
+		searchForm.submit();
+	};
+	function logout_nchub() {
+		var f = document.createElement("iframe");
+		f.setAttribute("src", "//nc.neopets.com/auth/logout?no-redirect=1");
+		f.setAttribute("width", "0");
+		f.setAttribute("height", "0");
+		f.setAttribute("border", "0");
+
+		var i = document.getElementById('logout_nchub');
+		i.appendChild(f);
+
+			}
+	jQuery(document).ready(function(){
+		$('a#logout_link').click(function (event) {
+			setTimeout(function() {window.location = '/logout.phtml';},1000);
+			logout_nchub();
+			return false;
+		});
+	});
+	//-->
+	</script>
+			<script type="text/javascript">
+var sdkInstance="appInsightsSDK";window[sdkInstance]="appInsights";var aiName=window[sdkInstance],aisdk=window[aiName]||function(e){function n(e){t[e]=function(){var n=arguments;t.queue.push(function(){t[e].apply(t,n)})}}var t={config:e};t.initialize=!0;var i=document,a=window;setTimeout(function(){var n=i.createElement("script");n.src=e.url||"https://az416426.vo.msecnd.net/scripts/b/ai.2.min.js",i.getElementsByTagName("script")[0].parentNode.appendChild(n)});try{t.cookie=i.cookie}catch(e){}t.queue=[],t.version=2;for(var r=["Event","PageView","Exception","Trace","DependencyData","Metric","PageViewPerformance"];r.length;)n("track"+r.pop());n("startTrackPage"),n("stopTrackPage");var s="Track"+r[0];if(n("start"+s),n("stop"+s),n("setAuthenticatedUserContext"),n("clearAuthenticatedUserContext"),n("flush"),!(!0===e.disableExceptionTracking||e.extensionConfig&&e.extensionConfig.ApplicationInsightsAnalytics&&!0===e.extensionConfig.ApplicationInsightsAnalytics.disableExceptionTracking)){n("_"+(r="onerror"));var o=a[r];a[r]=function(e,n,i,a,s){var c=o&&o(e,n,i,a,s);return!0!==c&&t["_"+r]({message:e,url:n,lineNumber:i,columnNumber:a,error:s}),c},e.autoExceptionInstrumented=!0}return t}(
+{
+	instrumentationKey:"dd77822d-9abf-4120-b766-370b1c479c84",
+		disableExceptionTracking: true,
+	disableAjaxTracking: true,
+	maxAjaxCallsPerView: 1
+	}
+);window[aiName]=aisdk,aisdk.queue&&0===aisdk.queue.length&&aisdk.trackPageView({});
+</script>
+<script type="text/javascript">
+var appInsightsUserName = 'tabbycat720';
+var userIDApp = appInsightsUserName.replace(/[,;=| ]+/g, "_");
+appInsights.setAuthenticatedUserContext(userIDApp);
+</script>
+
+		<script>(function() {
+	var _fbq = window._fbq || (window._fbq = []);
+	if (!_fbq.loaded) {
+		var fbds = document.createElement('script');
+		fbds.async = true;
+		fbds.src = '//connect.facebook.net/en_US/fbds.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(fbds, s);
+		_fbq.loaded = true;
+	}
+	_fbq.push(['addPixelId', '694075314048104']);
+})();
+window._fbq = window._fbq || [];
+window._fbq.push(['track', 'PixelInitialized', {}]);
+</script>
+<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=694075314048104&amp;ev=PixelInitialized" /></noscript>
+
+<script src="./Neopets - TCG Checklist Promo_files/ai.2.min.js.download"></script></head>
+<body id="neobdy" class="en">	<div id="neoFade"></div>
+
+	<script type="text/javascript">
+	$(document).ready(function()
+	{
+		$(".slidingDiv").show();
+		$(".show_hide").show();
+
+		$('.show_hide').click(function()
+		{
+			$(".slidingDiv").slideToggle();
+		});
+	});
+	</script>
+		<div id="pushdown_banner">
+			<div id="ad-slug-wrapper">
+				<table id="ad-table">
+					<tbody><tr>
+						<td class="slug"><img src="./Neopets - TCG Checklist Promo_files/aslugopal.png" width="13" height="66"></td>
+						<td class="neoaswc">
+							<script type="text/javascript">
+  window.ramp = window.ramp || {};
+  window.ramp.que = window.ramp.que || [];
+  window.ramp.passiveMode = true;
+ </script>
+ 
+<script type="text/javascript">
+ 
+// Define the ad units that you will use with an array
+var pwUnits = [
+  {
+    // You can define the selectorId however you want, but the type must match to the ad unit's type
+    selectorId: 'top-leaderboard',
+    type: 'leaderboard_atf'
+  },
+  {
+    selectorId: 'NP300x250ATF',
+    type: 'med_rect_atf'
+  },
+  {
+    selectorId: 'tower-ATF',
+    type: 'sky_atf'
+  },
+  {
+    selectorId: 'NP300x250BTF',
+    type: 'med_rect_btf'
+  }   
+ ]
+  
+// Define the init function
+var init = function () {  
+  ramp
+  // pass in the array 'pwUnits' defined right above
+    .addUnits(pwUnits)
+    .then(() => {
+      ramp.displayUnits()
+  }).catch( (e) =>{
+    // catch errors
+    ramp.displayUnits()
+    console.log(e)
+  })
+}
+  
+// Attach the init function to the ramp.onReady
+// This event listener notifies once the API is ready to be used   and calls the 'init() function'
+ramp.onReady = function() {
+  console.log('Ads API is initialized')
+  init()
+}
+</script>
+<script type="text/javascript" async="true" src="./Neopets - TCG Checklist Promo_files/ramp.js.download"></script>
+	<!-- dfp_site container -->
+	 <div id="top-leaderboard" style="height:90px; width:728px;">
+	 </div>
+						</td>
+					</tr>
+				</tbody></table>
+			</div>
+		</div>
+	<div id="main" class="">
+
+
+<div id="ban"></div>
+
+	<div id="header">
+		<table cellpadding="0" cellspacing="0" border="0">
+			<tbody><tr>
+				<td width="156" rowspan="3"><a href="https://www.neopets.com/index.phtml"><img src="./Neopets - TCG Checklist Promo_files/transparent_spacer.gif" width="156" height="77" alt="" border="0"></a></td>
+				<td class="eventIcon sf" xalign="left">&nbsp;</td>
+				<td class="user medText">
+Welcome, <a href="https://www.neopets.com/userlookup.phtml?user=tabbycat720">tabbycat720</a> <span style="font-weight: normal;">|</span> NP: <a id="npanchor" href="https://www.neopets.com/inventory.phtml">11,492</a> <span style="font-weight: normal;">|</span> NC: <a id="ncanchor" href="https://www.neopets.com/mall/index.phtml">180</a> <span style="font-weight: normal;">|</span> <a id="logout_link" href="https://www.neopets.com/logout.phtml"><b>Logout</b></a>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" id="navigation">
+					<table width="100%" cellpadding="0" cellspacing="0" border="0">
+						<tbody><tr>
+							<td width="725" align="center">
+<script type="text/javascript">
+	// Yay for Suckerfish!
+	startList = function() {
+		if (document.all&&document.getElementById) {
+			navRoot = document.getElementById("template_nav");
+			for (i=0; i<navRoot.childNodes.length; i++) {
+				node = navRoot.childNodes[i];
+				if (node.nodeName=="LI") {
+					node.onmouseover=function() {
+						this.className+=" over";
+					}
+					node.onmouseout=function() {
+						this.className=this.className.replace(" over", "");
+					}
+				}
+			}
+		}
+	}
+	window.onload=startList;
+</script>
+
+<ul id="template_nav">
+	<li class="nav_image"><a href="https://www.neopets.com/myaccount.phtml"><img src="./Neopets - TCG Checklist Promo_files/myaccount.png" alt="" border="0" width="115" height="38"></a><ul class="dropdown">
+			<li><a href="https://www.neopets.com/myaccount.phtml">» Control Panel</a></li>
+			<li><a href="https://www.neopets.com/preferences.phtml">» Preferences</a></li>
+			<li><a href="https://www.neopets.com/userinfo.phtml">» Edit Profile</a></li>
+			<li><a href="https://www.neopets.com/neomessages.phtml">» Neomail</a></li>
+			<li><a href="https://www.neopets.com/neofriends.phtml">» Neofriends</a></li>
+			<li><a href="https://www.neopets.com/addpet.phtml">» Create a Neopet</a></li>
+						<li><a href="https://www.neopets.com/space/warehouse/prizecodes.phtml">» Redeem Code</a></li>
+				</ul>
+
+	</li><li class="nav_image"><a href="https://www.neopets.com/customise/"><img src="./Neopets - TCG Checklist Promo_files/customise.png" alt="" border="0" width="90" height="38"></a><ul class="dropdown">
+			<li><a href="https://www.neopets.com/customise/">» Customise Neopet</a></li>
+			<li><a href="https://www.neopets.com/inventory.phtml">» Inventory</a></li>
+			<li><a href="https://www.neopets.com/closet.phtml">» Closet</a></li>
+			<li><a href="https://www.neopets.com/neohome/"> » Neohomes</a></li>
+			<li><a href="https://www.neopets.com/addpet.phtml">» Create a Neopet</a></li>
+			<li><a href="https://www.neopets.com/pound/">» Pound</a></li>
+		</ul>
+	</li>
+
+		<li class="nav_image"><a href="https://www.neopets.com/games/"><img src="./Neopets - TCG Checklist Promo_files/games.png" alt="" border="0" width="65" height="38"></a><ul class="dropdown">
+			<li><a href="https://www.neopets.com/games/">» Games Room</a></li>
+			<li><a href="https://www.neopets.com/games/category.phtml?sortby=pop">» Popular</a></li>
+			<li><a href="https://www.neopets.com/games/hiscores.phtml">» High Scores</a></li>
+			<li><a href="https://www.neopets.com/games/favourites.phtml">» Favourites</a></li>
+			<!--<li><a href="/keyquest/">&raquo; Key Quest</a></li>-->
+			<li><a href="https://www.neopets.com/dome/">» Battledome</a></li>
+						<li><a href="https://www.neopets.com/games/pet/">» Pet Games</a></li>
+			<li><a href="https://www.neopets.com/games/ghoulcatchers/">» Ghoul Catchers</a></li>
+					</ul>
+	</li>
+	
+	<li class="nav_image"><a href="https://www.neopets.com/explore.phtml"><img src="./Neopets - TCG Checklist Promo_files/explore.png" alt="" border="0" width="74" height="38"></a><ul class="dropdown">
+			<li><a href="https://www.neopets.com/explore.phtml">» Map of Neopia</a></li>
+			<li><a href="https://www.neopets.com/help/tutorial/index.phtml">» Tutorial</a></li>
+						<li><a href="https://www.neopets.com/neopedia.phtml">» Neopedia</a></li>
+			<li><a href="https://www.neopets.com/petcentral.phtml">» Pet Central</a></li>
+			<li><a href="https://www.neopets.com/calendar.phtml">» Calendar</a></li>
+		</ul>
+	</li>
+
+	<li class="nav_image"><a href="https://www.neopets.com/nf.phtml"><img src="./Neopets - TCG Checklist Promo_files/news.png" alt="" border="0" width="57" height="38"></a><ul class="dropdown">
+		<li><a href="https://www.neopets.com/nf.phtml">» New Features</a></li>
+		<li><a href="https://www.neopets.com/comingsoon.phtml">» Coming Soon</a></li>
+		<li><a href="https://www.neopets.com/ntimes/index.phtml">» Neopian Times</a></li><li><a href="https://www.neopets.com/stuff.phtml">» Merch News</a></li>		</ul>
+	</li>
+
+	
+	<li class="nav_image"><a href="https://www.neopets.com/community/index.phtml"><img src="./Neopets - TCG Checklist Promo_files/community.png" alt="" border="0" width="97" height="38"></a><ul class="dropdown">
+			<li><a href="https://www.neopets.com/community/index.phtml">» Hub</a></li>
+			<li><a href="https://www.neopets.com/neoboards/index.phtml">» Neoboards</a></li>
+						<li><a href="https://www.neopets.com/contests.phtml">» Spotlights</a></li>
+			<li><a href="https://www.neopets.com/guilds/index.phtml">» Guilds</a></li>
+		</ul>
+	</li>
+	<li class="nav_image"><a href="https://www.neopets.com/objects.phtml"><img src="./Neopets - TCG Checklist Promo_files/shops.png" alt="" border="0" width="61" height="38"></a><ul class="dropdown">
+			<li><a href="https://www.neopets.com/objects.phtml">» Neopia Central</a></li>
+			<li><a href="https://www.neopets.com/market.phtml?type=wizard">» Shop Wizard</a></li>
+			<li><a href="https://www.neopets.com/market.phtml?type=your">» Your Shop</a></li>
+			<li><a href="https://www.neopets.com/auctions.phtml">» Auctions</a></li>
+			<li><a href="https://www.neopets.com/island/tradingpost.phtml">» Trading Post</a></li>
+			<li><a href="https://www.neopets.com/bank.phtml">» Bank</a></li>
+						<li><a href="https://neopetsshop.com/">» Merch Shop</a></li>
+                <li><a href="https://www.neopets.com/shopping/index.phtml">» Merch Partners</a></li>
+				</ul>
+	</li>
+
+	<style type="text/css">
+		li.nav_image { margin-left: 0px; }
+	</style>
+		<li class="nav_image"><a href="http://ncmall.neopets.com/mall/shop.phtml?page=&amp;cat="><img src="./Neopets - TCG Checklist Promo_files/ncmall.png" alt="" border="0" width="70" height="38"></a><ul class="dropdown">
+			<li><a href="http://ncmall.neopets.com/mall/shop.phtml?page=&amp;cat=">» Shop</a></li>
+			<li><a href="http://nc.neopets.com/get-nickcash">» Get Neocash</a></li>
+			<li><a href="http://nc.neopets.com/nickcash-cards">» Find Neocash Cards</a></li>
+			<li><a href="http://nc.neopets.com/redeemnc">» Redeem Neocash Cards</a></li>
+			<li><a href="http://nc.neopets.com/transactionlog/">» Transaction Logs</a></li>
+					</ul>
+	</li>
+	<style type="text/css">
+		li.nav_image { margin-left: 0px; }
+		li.nav_premium_header{ margin-left:-2px !important; }
+	</style>
+	<li class="nav_image nav_premium_header"><a href="http://nc.neopets.com/membership/"><img src="./Neopets - TCG Checklist Promo_files/premium.png" alt="" border="0" width="95" height="38"></a><ul class="dropdown">
+
+						<li><a href="http://nc.neopets.com/membership/">» Become a Member</a></li>
+								</ul>
+	</li>
+</ul>
+</td>
+							<td id="nst">10:01:50 pm NST</td>
+						</tr>
+					</tbody></table>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3" height="3"><img src="./Neopets - TCG Checklist Promo_files/transparent_spacer.gif" width="1" height="3" alt="" border="0"></td>
+			</tr>
+		</tbody></table>
+	</div>
+
+	<div id="content">
+			<table width="100%" cellpadding="0" cellspacing="0" border="0">
+		
+
+		<tbody><tr>
+<td align="center" class="sidebar" width="178">
+<div class="sidebarModule" style="margin-bottom: 7px;">
+	<table width="150" cellpadding="3" cellspacing="0" border="0" class="sidebarTable">
+		<tbody><tr>
+			<td valign="middle" class="sidebarHeader medText"><a href="https://www.neopets.com/quickref.phtml"><b>swifto_8_8</b></a> </td>
+		</tr>
+		<tr>
+			<td class="activePet"><a href="https://www.neopets.com/quickref.phtml"><img src="./Neopets - TCG Checklist Promo_files/2.png" width="150" height="150" border="0" style=""></a></td>
+		</tr>
+		<tr>
+			<td class="activePet sf" align="center"><a href="https://www.neopets.com/customise/?view=swifto_8_8"><b><span class="pointer">»</span> Customise</b></a></td>
+		</tr>
+
+		<tr>
+			<td class="activePetInfo" align="center">
+				<table cellpadding="1" cellspacing="0" border="0">
+					<tbody><tr>
+						<td align="right">Species:</td>
+						<td align="left"><b>JubJub</b></td>
+					</tr>
+
+					<tr>
+						<td align="right">Health:</td>
+						<td align="left"><b><font color="green"><b>151 / 179</b></font></b></td>
+					</tr>
+
+					<tr>
+						<td align="right">Mood:</td>
+						<td align="left"><b>delighted!</b></td>
+					</tr>
+					
+					<tr>
+						<td align="right">Hunger:</td>
+						<td align="left"><b>bloated</b></td>
+					</tr>
+
+					<tr>
+						<td align="right">Age:</td>
+						<td align="left"><b>5,962 days</b></td>
+						</tr>
+
+					<tr>
+						<td align="right">Level:</td>
+						<td align="left"><b>65</b></td>
+					</tr>
+				</tbody></table>
+
+				
+			</td>
+		</tr>
+	</tbody></table>
+</div>
+
+<div class="sidebarModule" style="margin-bottom: 7px;">
+	<table width="158" cellpadding="2" cellspacing="0" border="0" class="sidebarTable">
+		<tbody><tr>
+			<td valign="middle" class="sidebarHeader medText">Search Neopets</td>
+		</tr>
+		<tr>
+			<td class="neofriend" align="center">
+				<form onsubmit="search_handle(this);" style="padding-top: 4px; padding-bottom: 4px;">
+					<input class="sf" type="text" name="q" maxlength="255" value="Enter search text..." style="width: 135px; color: #a5a5a5; padding: 2px;" onfocus="this.style.color=&#39;#000000&#39;; if( this.value==&#39;Enter search text...&#39; ) { this.value=&#39;&#39;; }" onblur="if( this.value==&#39;&#39; ) { this.style.color=&#39;#A5A5A5&#39;; this.value=&#39;Enter search text...&#39;; }"><br>
+					<input type="submit" value="Go!" class="sf">
+					<input type="hidden" name="client" value="pub-9208792519293771">
+					<input type="hidden" name="forid" value="1">
+					<input type="hidden" name="ie" value="ISO-8859-1">
+					<input type="hidden" name="oe" value="ISO-8859-1">
+					<input type="hidden" name="safe" value="active">
+					<input type="hidden" name="domains" value="www.neopets.com">
+					<input type="hidden" name="cof" value="GALT:#FFFFFF;GL:1;DIV:#000066;VLC:FFFFFF;AH:center;BGC:FFFFFF;LBGC:000066;ALC:FFFFFF;LC:FFFFFF;T:000000;GFNT:000066;GIMP:000077;FORID:1">
+					<input type="hidden" name="hl" value="en">
+					<input type="hidden" name="s">
+				</form>
+			</td>
+		</tr>
+	</tbody></table>
+</div>
+<style>
+.neofriendUsername_online{
+	text-align:left;
+	font-size:10px;
+}
+
+
+.button-link-online {
+	padding: 3px 10px;
+	background: #4479BA;
+	color: #FFF !important;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	border: solid 1px #20538D;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+	-webkit-transition-duration: 0.2s;
+	-moz-transition-duration: 0.2s;
+	transition-duration: 0.2s;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+}
+.button-link-online:hover {
+	background: #356094;
+	border: solid 1px #2A4E77;
+	text-decoration: none;
+}
+.button-link-online:active {
+	-webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+	-moz-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+	box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+	background: #2E5481;
+	border: solid 1px #203E5F;
+}
+
+</style>
+<div class="sidebarModule">
+	<table width="158" cellpadding="2" cellspacing="0" border="0" class="sidebarTable">
+		<tbody><tr>
+						<td valign="middle" class="sidebarHeader medText"><a href="https://www.neopets.com/neofriends.phtml"><b>Neofriends</b></a> &nbsp;&nbsp;&nbsp; <a href="https://www.neopets.com/s/index.phtml?track_cat_id=50&amp;item_id=488"><img src="./Neopets - TCG Checklist Promo_files/question_mark.png" width="13" height="13" alt="" border="0" align="absbottom"></a></td>
+		</tr>
+		<tr>
+			<td class="neofriend" align="center">
+
+<br>
+			None of your Neofriends are currently online.  You must be lonely.
+			<br><br>			</td>
+		</tr>
+	</tbody></table>
+</div>
+</td>				<td class="content">
+														<!-- r0 -->
+
+
+
+<b>Neopets TCG</b><br>
+<center>
+<script type="text/javascript" src="./Neopets - TCG Checklist Promo_files/swfobject.js.download"></script>
+<script type="text/javascript">
+var swf = new SWFObject('https://images.neopets.com/tcg/tcg_nav_v1.swf', 'flash_50597016271', '550', '118', '6', '#FFFFFF');
+swf.addParam('quality', 'high');
+swf.addParam('scale', 'exactfit');
+swf.addParam('menu', 'false');
+swf.addParam('allowScriptAccess', 'always');
+swf.addParam('swLiveConnect', 'true');
+swf.addParam('bgcolor', 'white');
+swf.write();
+var flashId = 'flash_50597016271';
+</script>
+<link href="./Neopets - TCG Checklist Promo_files/flash_rip.css" rel="stylesheet" type="text/css">
+		<div class="flashRIP__2020" style="">
+			<div class="flashRIP-content__2020">
+				<div class="flashRIP-imgwrapper__2020"><div class="flashRIP-img__2020"></div></div>
+				<p>Uh oh! Some elements may not display correctly without Flash support. We're hard at work converting this into a more modern &amp; secure format. Thank you for your patience.</p>
+			</div>
+		</div>
+		<script type="text/javascript" src="./Neopets - TCG Checklist Promo_files/flash_rip.js.download"></script>
+</center><br>
+<strong>Neopets TCG Card Checklist</strong><br><br>
+
+<div align="center"><strong>Card Editions:</strong> 
+
+<a href="https://www.neopets.com/tcg/checklist.phtml?edition=1"><strong>First Edition</strong></a> | <a href="https://www.neopets.com/tcg/checklist.phtml?edition=2"><strong>Battle For Meridell</strong></a> | <a href="https://www.neopets.com/tcg/checklist.phtml?edition=3"><strong>Return of Dr. Sloth</strong></a> | <a href="https://www.neopets.com/tcg/checklist.phtml?edition=4"><strong>Mystery Island</strong></a> | <a href="https://www.neopets.com/tcg/checklist.phtml?edition=5"><strong>Promotional</strong></a> | <a href="https://www.neopets.com/tcg/checklist.phtml?edition=6"><strong>Hannah and the Ice Caves</strong></a> | <a href="https://www.neopets.com/tcg/checklist.phtml?edition=7"><strong>Curse of Maraqua</strong></a> | <a href="https://www.neopets.com/tcg/checklist.phtml?edition=8"><strong>Lost Desert</strong></a> | <a href="https://www.neopets.com/tcg/checklist.phtml?edition=9"><strong>Darkest Faerie</strong></a> | <a href="https://www.neopets.com/tcg/checklist.phtml?edition=10"><strong>Travels in Neopia</strong></a> | <a href="https://www.neopets.com/tcg/checklist.phtml?edition=11"><strong>Haunted Woods</strong></a></div><br>		<script type="text/javascript" language="JavaScript">
+			function showCard(EDID, CARDID) {
+				window.open("displayCard.phtml?edid=" + EDID + "&id=" + CARDID, "CardDisplay", "width=300, height=420, location=no, status=no");
+			};
+		</script>
+		<strong>Browsing:</strong> Promotional		<br><br>
+		Below is the list of cards for this edition.  Select the checkbox if you have it in your collection!  		<form action="https://www.neopets.com/tcg/process_checklist.phtml" method="post">
+		<input type="hidden" name="edition" value="5">
+		<table width="100%" cellpadding="2" cellspacing="0" style="border:1px solid #000000;">
+			<tbody><tr bgcolor="#FFCC00">
+				<td align="center"><strong>Card Number</strong></td>
+				<td align="center"><strong>Card Name</strong></td>
+				<td align="center"><strong>Rarity</strong></td>
+				<td align="center"><strong>Collected</strong></td>
+			</tr>
+
+<tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">1</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(5, 1);"><strong>Red Kacheek</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">C</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_1"></td><input type="hidden" name="card_id_1" value="1"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">2</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(5, 2);"><strong>Green Shoyru</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">C</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_2"></td><input type="hidden" name="card_id_2" value="2"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">3</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(5, 3);"><strong>Blue Grarrl</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">C</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_3"></td><input type="hidden" name="card_id_3" value="3"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">4</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(5, 4);"><strong>Red Wocky</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">C</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_4"></td><input type="hidden" name="card_id_4" value="4"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">5</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(5, 5);"><strong>Yellow Lupe</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">C</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_5"></td><input type="hidden" name="card_id_5" value="5"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">51</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(5, 51);"><strong>Blue Mynci</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">H</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_6"></td><input type="hidden" name="card_id_6" value="51"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">52</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(5, 52);"><strong>Red Korbat</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">H</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_7"></td><input type="hidden" name="card_id_7" value="52"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">53</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(5, 53);"><strong>Blue Scorchio</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">C</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_8"></td><input type="hidden" name="card_id_8" value="53"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">54</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(5, 54);"><strong>Green Acara</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">C</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_9"></td><input type="hidden" name="card_id_9" value="54"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">55</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(5, 55);"><strong>Red Aisha</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">C</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_10"></td><input type="hidden" name="card_id_10" value="55"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">56</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(5, 56);"><strong>Yellow Eyrie</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">C</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_11"></td><input type="hidden" name="card_id_11" value="56"></tr></tbody></table><br><div align="center"><input type="submit" name="submit" value="Save Changes!"></div></form><br clear="all">
+
+										
+				</td>
+			</tr>
+		</tbody></table>
+	</div>
+	<div id="footer">
+		<img src="./Neopets - TCG Checklist Promo_files/1.png" width="200" height="170" alt="" border="0" class="footerNifty">
+		<table width="100%" cellpadding="0" cellspacing="0" border="0" class="footer">
+			<tbody><tr>
+				<td width="175" align="left"><a href="https://www.neopets.com/index.phtml"><img src="./Neopets - TCG Checklist Promo_files/transparent_spacer.gif" width="156" height="46" alt="Neopets.com" border="0"></a></td>
+				<td align="left"><br>
+					<table cellpadding="0" cellspacing="0" border="0">
+						<tbody><tr>
+							<!-- Search -->
+							<td class="sf" valign="middle">
+								<form onsubmit="javascript: search_handle(this);">
+								<table cellpadding="0" cellspacing="0" border="0">
+									<tbody><tr>
+										<td class="footerForm sf" valign="middle"><b>Search Neopets:</b>&nbsp;</td>
+										<td valign="middle"><input class="sf" type="text" name="q" size="25" maxlength="255" value="Enter search text..." style="color: #a5a5a5; padding: 2px;" onfocus="this.style.color=&#39;#000000&#39;; if( this.value==&#39;Enter search text...&#39; ) { this.value=&#39;&#39;; }" onblur="if( this.value==&#39;&#39; ) { this.style.color=&#39;#A5A5A5&#39;; this.value=&#39;Enter search text...&#39;; }">&nbsp;</td>
+										<td valign="middle"><input type="submit" value="Go!" class="sf">
+										<input type="hidden" name="client" value="pub-9208792519293771">
+										<input type="hidden" name="forid" value="1">
+										<input type="hidden" name="ie" value="ISO-8859-1">
+										<input type="hidden" name="oe" value="ISO-8859-1">
+										<input type="hidden" name="safe" value="active">
+										<input type="hidden" name="domains" value="www.neopets.com">
+										<input type="hidden" name="cof" value="GALT:#FFFFFF;GL:1;DIV:#000066;VLC:FFFFFF;AH:center;BGC:FFFFFF;LBGC:000066;ALC:FFFFFF;LC:FFFFFF;T:000000;GFNT:000066;GIMP:000077;FORID:1">
+										<input type="hidden" name="hl" value="en">
+										<input type="hidden" name="s">
+										</td>
+									</tr>
+								</tbody></table>
+								</form>
+							</td>
+							<td width="15">&nbsp;</td>
+							<!-- Language -->
+							<td class="sf" valign="top">
+								<table cellpadding="0" cellspacing="0" border="0">
+									<tbody><tr>
+										<td class="footerForm sf" valign="middle"><form method="post"><b>Select Language:</b>&nbsp;</form></td>
+										<td valign="top">
+											<select name="lang" class="sf"><option value="en" selected="">English</option><option value="nl">Nederlands</option><option value="pt">Português</option><option value="de">Deutsch</option><option value="fr">Français</option><option value="it">Italiano</option><option value="es">Español</option><option value="ch">简体中文</option><option value="zh">繁體中文</option><option value="ja">日本語</option><option value="ko">한국어</option></select>&nbsp;</td>
+										<td valign="top"><input type="submit" value="Go!" class="sf"></td>
+									</tr>
+								</tbody></table>
+							</td>
+						</tr>
+					</tbody></table>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" class="copyright">
+
+					<a href="https://www.neopets.com/privacy.phtml"><img src="./Neopets - TCG Checklist Promo_files/privacypolicy.png" width="81" height="18" border="0" alt="privacypolicy"></a>
+<img src="./Neopets - TCG Checklist Promo_files/divider.png" width="4" height="16" border="0">
+<a href="https://www.neopets.com/safetytips.phtml"><img src="./Neopets - TCG Checklist Promo_files/safetytips.png" width="61" height="18" border="0" alt="safetytips"></a>
+<img src="./Neopets - TCG Checklist Promo_files/divider.png" width="4" height="16" border="0">
+<a href="https://www.neopets.com/aboutus.phtml"><img src="./Neopets - TCG Checklist Promo_files/aboutus.png" width="50" height="18" border="0" alt="aboutus"></a>
+<img src="./Neopets - TCG Checklist Promo_files/divider.png" width="4" height="16" border="0">
+<a href="https://www.neopets.com/refer/index.phtml"><img src="./Neopets - TCG Checklist Promo_files/referral.png" width="98" height="18" border="0" alt="referral"></a>
+<img src="./Neopets - TCG Checklist Promo_files/divider.png" width="4" height="16" border="0">
+<a href="https://www.neopets.com/help.phtml"><img src="./Neopets - TCG Checklist Promo_files/help.png" width="25" height="18" border="0" alt="help"></a>
+					<br>
+					<div class="sf" style="width: 800px;">
+						<div style="position: relative; height: 42px; width: 300px;"></div>						NEOPETS and all related indicia are trademarks of <a href="https://www.neopets.com/aboutus.phtml"><b>Neopets, Inc.</b></a>, © 1999-2023. ® denotes Reg. USPTO. All rights reserved. Use of this site signifies your acceptance of the <a href="https://www.neopets.com/terms.phtml"><b>Terms of Use</b></a>. <a href="https://www.neopets.com/privacy.phtml">Your California Privacy Rights</a>
+
+
+					</div>
+				</td>
+			</tr>
+		</tbody></table>
+	</div>
+
+
+<script language="JavaScript">
+function tzCook() { 
+	var today = new Date();
+	var expire = new Date();
+	expire.setTime(today.getTime() + 3600000*24*30);
+	var cstr = "_tz="+escape(today.getTimezoneOffset()) + ";expires="+expire.toGMTString() + ";path=/;domain=.neopets.com;";
+	document.cookie = cstr;
+}
+tzCook();
+</script>
+</div><div style="display: none" id="logout_nchub"></div>
+<link href="./Neopets - TCG Checklist Promo_files/base.css" rel="stylesheet" type="text/css">
+<script src="./Neopets - TCG Checklist Promo_files/jquery.colorbox.min.js.download" type="text/javascript"></script>
+
+
+
+<div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" style="display: none;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxLoadedContent" style="width: 0px; height: 0px; overflow: hidden; float: left;"></div><div id="cboxLoadingOverlay" style="float: left;"></div><div id="cboxLoadingGraphic" style="float: left;"></div><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><div id="cboxNext" style="float: left;"></div><div id="cboxPrevious" style="float: left;"></div><div id="cboxSlideshow" style="float: left;"></div><div id="cboxClose" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div></div><div id="imageDownloaderSidebarContainer"><div class="image-downloader-ext-container"><div tabindex="-1" class="b-sidebar-outer"><!----><div id="image-downloader-sidebar" tabindex="-1" role="dialog" aria-modal="false" aria-hidden="true" class="b-sidebar shadow b-sidebar-right bg-light text-dark" style="width: 500px; display: none;"><!----><div class="b-sidebar-body"><div></div></div><!----></div><!----><!----></div></div></div></body></html>

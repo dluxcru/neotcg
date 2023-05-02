@@ -1,0 +1,691 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "//www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0053)https://www.neopets.com/tcg/checklist.phtml?edition=2 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="description" content="Neopets.Com - Virtual Pet Community! Join up for free games, shops, auctions, chat and more!">
+	<meta name="keywords" content="pets, pet, games, game, virtual, chat, fun, prizes, play, virtual pet, kids">
+	<meta name="robots" content="noodp, index, follow">
+	<meta http-equiv="X-UA-Compatible" content="IE=8">
+	
+
+	<link rel="stylesheet" type="text/css" href="./Neopets - TCG Checklist BfM_files/default.css">
+	<link rel="stylesheet" type="text/css" href="./Neopets - TCG Checklist BfM_files/ad.css">
+
+	<style type="text/css">td.neoaswc img {vertical-align: top;}</style>	<style type="text/css">
+
+	.centeredOverlay {
+		position: absolute;
+		background-color: rgba(0, 0, 0, 0.3);
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+		color:black;
+		text-align: center;
+	}
+	</style>
+
+	<link rel="stylesheet" type="text/css" href="./Neopets - TCG Checklist BfM_files/046_ff_sep2017.css">
+
+			
+	<title>Neopets - TCG Checklist</title>
+	<script async="" src="./Neopets - TCG Checklist BfM_files/fbds.js.download"></script><script id="js-framework" type="text/javascript" language="JavaScript" src="./Neopets - TCG Checklist BfM_files/common.js.download"></script>
+
+			<script src="./Neopets - TCG Checklist BfM_files/jquery-1.7.1.min.js.download" type="text/javascript"></script>
+	<script src="./Neopets - TCG Checklist BfM_files/jquery-ui-1.8.17.min.js.download" type="text/javascript"></script>
+	
+	
+	<script type="text/javascript">
+	var Neo = {
+		clog: function() {
+			if (window.console && console.log) {
+				if (arguments.length == 0) {
+					console.log('! no arguments passed !');
+				} else if (arguments.length == 1) {
+					console.log(arguments[0]);
+				} else {
+				console.log(arguments);
+			}
+		}
+		},
+		popups: {
+			list: [],
+			add: function(popup) {
+				Neo.popups.list.push(popup);
+				Neo.fade.show();
+			},
+			rem: function(popup) {
+				for (var i = Neo.popups.list.length - 1; i >= 0; i--) {
+					var curPopup = Neo.popups.list[i];
+					Neo.clog(i, popup, curPopup, popup == curPopup);
+					if (curPopup == popup) {
+						Neo.popups.list.splice(i, 1);
+					}
+				}
+				if (Neo.popups.list.length == 0) {
+					Neo.fade.hide();
+				}
+			},
+			remAll: function() {
+				Neo.popups.list = [];
+				Neo.fade.hide();
+			}
+		},
+		fade: {
+			show: function() {
+				$('#neoFade').show();
+			},
+			hide: function() {
+				$('#neoFade').hide();
+			}
+		},
+		setNp: function(newnp) {
+			$('#npanchor').text(newnp);
+		},
+		setNc: function(newnc) {
+			Neo.clog('lol', newnc);
+			$('#ncanchor').text(newnc);
+		},
+		precache: function(url) {
+			if ($.isArray(url)) {
+				for (var i = 0; i < url.length; i++) {
+					new Image().src = url[i];
+				}
+			} else {
+				new Image().src = url;
+			}
+		}
+	};
+	</script>
+	<style type="text/css">
+		#neoFade { display: none; position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; opacity: 0.5; background: black; filter: alpha(opacity=50); z-index: 9500; }
+	</style>
+
+	<script id="js-browserdetect" type="text/javascript" language="JavaScript" src="./Neopets - TCG Checklist BfM_files/getbrowser.js.download">
+
+	</script>
+
+	<!--
+	<script id="js-browserdetect2" type="text/javascript" language="JavaScript" src="https://images.neopets.com/js/getbrowser_new.js">
+	</script> -->
+
+<script type="text/javascript" src="./Neopets - TCG Checklist BfM_files/n.js.download"></script>
+	<script type="text/javascript">
+	<!--
+	var nl = "en";
+	var nh = 10;
+	var nm = 2;
+	var ns = 0;
+	var na = "pm";
+	var ncl = new Array(0, 53, 104, 137, 169, 198, 231, 265, 299, 335, 368, 397, 427);
+
+	window.setInterval('nc()', 1000);
+
+	function sh(i) {
+		ol.style.clip = "rect("+ncl[i-1]+" 128 "+ncl[i]+" 0)";
+		ol.style.visibility = "visible";
+	}
+
+	function mo() {
+		ol.style.visibility = "hidden";
+	}
+
+	function search_handle(searchForm) {
+		searchForm.action = "/search.phtml";
+		searchForm.target = "";
+		searchForm.method = "post";
+		searchForm.s.value = searchForm.q.value;
+		searchForm.submit();
+	};
+	function logout_nchub() {
+		var f = document.createElement("iframe");
+		f.setAttribute("src", "//nc.neopets.com/auth/logout?no-redirect=1");
+		f.setAttribute("width", "0");
+		f.setAttribute("height", "0");
+		f.setAttribute("border", "0");
+
+		var i = document.getElementById('logout_nchub');
+		i.appendChild(f);
+
+			}
+	jQuery(document).ready(function(){
+		$('a#logout_link').click(function (event) {
+			setTimeout(function() {window.location = '/logout.phtml';},1000);
+			logout_nchub();
+			return false;
+		});
+	});
+	//-->
+	</script>
+			<script type="text/javascript">
+var sdkInstance="appInsightsSDK";window[sdkInstance]="appInsights";var aiName=window[sdkInstance],aisdk=window[aiName]||function(e){function n(e){t[e]=function(){var n=arguments;t.queue.push(function(){t[e].apply(t,n)})}}var t={config:e};t.initialize=!0;var i=document,a=window;setTimeout(function(){var n=i.createElement("script");n.src=e.url||"https://az416426.vo.msecnd.net/scripts/b/ai.2.min.js",i.getElementsByTagName("script")[0].parentNode.appendChild(n)});try{t.cookie=i.cookie}catch(e){}t.queue=[],t.version=2;for(var r=["Event","PageView","Exception","Trace","DependencyData","Metric","PageViewPerformance"];r.length;)n("track"+r.pop());n("startTrackPage"),n("stopTrackPage");var s="Track"+r[0];if(n("start"+s),n("stop"+s),n("setAuthenticatedUserContext"),n("clearAuthenticatedUserContext"),n("flush"),!(!0===e.disableExceptionTracking||e.extensionConfig&&e.extensionConfig.ApplicationInsightsAnalytics&&!0===e.extensionConfig.ApplicationInsightsAnalytics.disableExceptionTracking)){n("_"+(r="onerror"));var o=a[r];a[r]=function(e,n,i,a,s){var c=o&&o(e,n,i,a,s);return!0!==c&&t["_"+r]({message:e,url:n,lineNumber:i,columnNumber:a,error:s}),c},e.autoExceptionInstrumented=!0}return t}(
+{
+	instrumentationKey:"dd77822d-9abf-4120-b766-370b1c479c84",
+		disableExceptionTracking: true,
+	disableAjaxTracking: true,
+	maxAjaxCallsPerView: 1
+	}
+);window[aiName]=aisdk,aisdk.queue&&0===aisdk.queue.length&&aisdk.trackPageView({});
+</script>
+<script type="text/javascript">
+var appInsightsUserName = 'tabbycat720';
+var userIDApp = appInsightsUserName.replace(/[,;=| ]+/g, "_");
+appInsights.setAuthenticatedUserContext(userIDApp);
+</script>
+
+		<script>(function() {
+	var _fbq = window._fbq || (window._fbq = []);
+	if (!_fbq.loaded) {
+		var fbds = document.createElement('script');
+		fbds.async = true;
+		fbds.src = '//connect.facebook.net/en_US/fbds.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(fbds, s);
+		_fbq.loaded = true;
+	}
+	_fbq.push(['addPixelId', '694075314048104']);
+})();
+window._fbq = window._fbq || [];
+window._fbq.push(['track', 'PixelInitialized', {}]);
+</script>
+<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=694075314048104&amp;ev=PixelInitialized" /></noscript>
+
+<script src="./Neopets - TCG Checklist BfM_files/ai.2.min.js.download"></script></head>
+<body id="neobdy" class="en">	<div id="neoFade"></div>
+
+	<script type="text/javascript">
+	$(document).ready(function()
+	{
+		$(".slidingDiv").show();
+		$(".show_hide").show();
+
+		$('.show_hide').click(function()
+		{
+			$(".slidingDiv").slideToggle();
+		});
+	});
+	</script>
+		<div id="pushdown_banner">
+			<div id="ad-slug-wrapper">
+				<table id="ad-table">
+					<tbody><tr>
+						<td class="slug"><img src="./Neopets - TCG Checklist BfM_files/aslugopal.png" width="13" height="66"></td>
+						<td class="neoaswc">
+							<script type="text/javascript">
+  window.ramp = window.ramp || {};
+  window.ramp.que = window.ramp.que || [];
+  window.ramp.passiveMode = true;
+ </script>
+ 
+<script type="text/javascript">
+ 
+// Define the ad units that you will use with an array
+var pwUnits = [
+  {
+    // You can define the selectorId however you want, but the type must match to the ad unit's type
+    selectorId: 'top-leaderboard',
+    type: 'leaderboard_atf'
+  },
+  {
+    selectorId: 'NP300x250ATF',
+    type: 'med_rect_atf'
+  },
+  {
+    selectorId: 'tower-ATF',
+    type: 'sky_atf'
+  },
+  {
+    selectorId: 'NP300x250BTF',
+    type: 'med_rect_btf'
+  }   
+ ]
+  
+// Define the init function
+var init = function () {  
+  ramp
+  // pass in the array 'pwUnits' defined right above
+    .addUnits(pwUnits)
+    .then(() => {
+      ramp.displayUnits()
+  }).catch( (e) =>{
+    // catch errors
+    ramp.displayUnits()
+    console.log(e)
+  })
+}
+  
+// Attach the init function to the ramp.onReady
+// This event listener notifies once the API is ready to be used   and calls the 'init() function'
+ramp.onReady = function() {
+  console.log('Ads API is initialized')
+  init()
+}
+</script>
+<script type="text/javascript" async="true" src="./Neopets - TCG Checklist BfM_files/ramp.js.download"></script>
+	<!-- dfp_site container -->
+	 <div id="top-leaderboard" style="height:90px; width:728px;">
+	 </div>
+						</td>
+					</tr>
+				</tbody></table>
+			</div>
+		</div>
+	<div id="main" class="">
+
+
+<div id="ban"></div>
+
+	<div id="header">
+		<table cellpadding="0" cellspacing="0" border="0">
+			<tbody><tr>
+				<td width="156" rowspan="3"><a href="https://www.neopets.com/index.phtml"><img src="./Neopets - TCG Checklist BfM_files/transparent_spacer.gif" width="156" height="77" alt="" border="0"></a></td>
+				<td class="eventIcon sf" xalign="left">&nbsp;</td>
+				<td class="user medText">
+Welcome, <a href="https://www.neopets.com/userlookup.phtml?user=tabbycat720">tabbycat720</a> <span style="font-weight: normal;">|</span> NP: <a id="npanchor" href="https://www.neopets.com/inventory.phtml">11,492</a> <span style="font-weight: normal;">|</span> NC: <a id="ncanchor" href="https://www.neopets.com/mall/index.phtml">180</a> <span style="font-weight: normal;">|</span> <a id="logout_link" href="https://www.neopets.com/logout.phtml"><b>Logout</b></a>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" id="navigation">
+					<table width="100%" cellpadding="0" cellspacing="0" border="0">
+						<tbody><tr>
+							<td width="725" align="center">
+<script type="text/javascript">
+	// Yay for Suckerfish!
+	startList = function() {
+		if (document.all&&document.getElementById) {
+			navRoot = document.getElementById("template_nav");
+			for (i=0; i<navRoot.childNodes.length; i++) {
+				node = navRoot.childNodes[i];
+				if (node.nodeName=="LI") {
+					node.onmouseover=function() {
+						this.className+=" over";
+					}
+					node.onmouseout=function() {
+						this.className=this.className.replace(" over", "");
+					}
+				}
+			}
+		}
+	}
+	window.onload=startList;
+</script>
+
+<ul id="template_nav">
+	<li class="nav_image"><a href="https://www.neopets.com/myaccount.phtml"><img src="./Neopets - TCG Checklist BfM_files/myaccount.png" alt="" border="0" width="115" height="38"></a><ul class="dropdown">
+			<li><a href="https://www.neopets.com/myaccount.phtml">» Control Panel</a></li>
+			<li><a href="https://www.neopets.com/preferences.phtml">» Preferences</a></li>
+			<li><a href="https://www.neopets.com/userinfo.phtml">» Edit Profile</a></li>
+			<li><a href="https://www.neopets.com/neomessages.phtml">» Neomail</a></li>
+			<li><a href="https://www.neopets.com/neofriends.phtml">» Neofriends</a></li>
+			<li><a href="https://www.neopets.com/addpet.phtml">» Create a Neopet</a></li>
+						<li><a href="https://www.neopets.com/space/warehouse/prizecodes.phtml">» Redeem Code</a></li>
+				</ul>
+
+	</li><li class="nav_image"><a href="https://www.neopets.com/customise/"><img src="./Neopets - TCG Checklist BfM_files/customise.png" alt="" border="0" width="90" height="38"></a><ul class="dropdown">
+			<li><a href="https://www.neopets.com/customise/">» Customise Neopet</a></li>
+			<li><a href="https://www.neopets.com/inventory.phtml">» Inventory</a></li>
+			<li><a href="https://www.neopets.com/closet.phtml">» Closet</a></li>
+			<li><a href="https://www.neopets.com/neohome/"> » Neohomes</a></li>
+			<li><a href="https://www.neopets.com/addpet.phtml">» Create a Neopet</a></li>
+			<li><a href="https://www.neopets.com/pound/">» Pound</a></li>
+		</ul>
+	</li>
+
+		<li class="nav_image"><a href="https://www.neopets.com/games/"><img src="./Neopets - TCG Checklist BfM_files/games.png" alt="" border="0" width="65" height="38"></a><ul class="dropdown">
+			<li><a href="https://www.neopets.com/games/">» Games Room</a></li>
+			<li><a href="https://www.neopets.com/games/category.phtml?sortby=pop">» Popular</a></li>
+			<li><a href="https://www.neopets.com/games/hiscores.phtml">» High Scores</a></li>
+			<li><a href="https://www.neopets.com/games/favourites.phtml">» Favourites</a></li>
+			<!--<li><a href="/keyquest/">&raquo; Key Quest</a></li>-->
+			<li><a href="https://www.neopets.com/dome/">» Battledome</a></li>
+						<li><a href="https://www.neopets.com/games/pet/">» Pet Games</a></li>
+			<li><a href="https://www.neopets.com/games/ghoulcatchers/">» Ghoul Catchers</a></li>
+					</ul>
+	</li>
+	
+	<li class="nav_image"><a href="https://www.neopets.com/explore.phtml"><img src="./Neopets - TCG Checklist BfM_files/explore.png" alt="" border="0" width="74" height="38"></a><ul class="dropdown">
+			<li><a href="https://www.neopets.com/explore.phtml">» Map of Neopia</a></li>
+			<li><a href="https://www.neopets.com/help/tutorial/index.phtml">» Tutorial</a></li>
+						<li><a href="https://www.neopets.com/neopedia.phtml">» Neopedia</a></li>
+			<li><a href="https://www.neopets.com/petcentral.phtml">» Pet Central</a></li>
+			<li><a href="https://www.neopets.com/calendar.phtml">» Calendar</a></li>
+		</ul>
+	</li>
+
+	<li class="nav_image"><a href="https://www.neopets.com/nf.phtml"><img src="./Neopets - TCG Checklist BfM_files/news.png" alt="" border="0" width="57" height="38"></a><ul class="dropdown">
+		<li><a href="https://www.neopets.com/nf.phtml">» New Features</a></li>
+		<li><a href="https://www.neopets.com/comingsoon.phtml">» Coming Soon</a></li>
+		<li><a href="https://www.neopets.com/ntimes/index.phtml">» Neopian Times</a></li><li><a href="https://www.neopets.com/stuff.phtml">» Merch News</a></li>		</ul>
+	</li>
+
+	
+	<li class="nav_image"><a href="https://www.neopets.com/community/index.phtml"><img src="./Neopets - TCG Checklist BfM_files/community.png" alt="" border="0" width="97" height="38"></a><ul class="dropdown">
+			<li><a href="https://www.neopets.com/community/index.phtml">» Hub</a></li>
+			<li><a href="https://www.neopets.com/neoboards/index.phtml">» Neoboards</a></li>
+						<li><a href="https://www.neopets.com/contests.phtml">» Spotlights</a></li>
+			<li><a href="https://www.neopets.com/guilds/index.phtml">» Guilds</a></li>
+		</ul>
+	</li>
+	<li class="nav_image"><a href="https://www.neopets.com/objects.phtml"><img src="./Neopets - TCG Checklist BfM_files/shops.png" alt="" border="0" width="61" height="38"></a><ul class="dropdown">
+			<li><a href="https://www.neopets.com/objects.phtml">» Neopia Central</a></li>
+			<li><a href="https://www.neopets.com/market.phtml?type=wizard">» Shop Wizard</a></li>
+			<li><a href="https://www.neopets.com/market.phtml?type=your">» Your Shop</a></li>
+			<li><a href="https://www.neopets.com/auctions.phtml">» Auctions</a></li>
+			<li><a href="https://www.neopets.com/island/tradingpost.phtml">» Trading Post</a></li>
+			<li><a href="https://www.neopets.com/bank.phtml">» Bank</a></li>
+						<li><a href="https://neopetsshop.com/">» Merch Shop</a></li>
+                <li><a href="https://www.neopets.com/shopping/index.phtml">» Merch Partners</a></li>
+				</ul>
+	</li>
+
+	<style type="text/css">
+		li.nav_image { margin-left: 0px; }
+	</style>
+		<li class="nav_image"><a href="http://ncmall.neopets.com/mall/shop.phtml?page=&amp;cat="><img src="./Neopets - TCG Checklist BfM_files/ncmall.png" alt="" border="0" width="70" height="38"></a><ul class="dropdown">
+			<li><a href="http://ncmall.neopets.com/mall/shop.phtml?page=&amp;cat=">» Shop</a></li>
+			<li><a href="http://nc.neopets.com/get-nickcash">» Get Neocash</a></li>
+			<li><a href="http://nc.neopets.com/nickcash-cards">» Find Neocash Cards</a></li>
+			<li><a href="http://nc.neopets.com/redeemnc">» Redeem Neocash Cards</a></li>
+			<li><a href="http://nc.neopets.com/transactionlog/">» Transaction Logs</a></li>
+					</ul>
+	</li>
+	<style type="text/css">
+		li.nav_image { margin-left: 0px; }
+		li.nav_premium_header{ margin-left:-2px !important; }
+	</style>
+	<li class="nav_image nav_premium_header"><a href="http://nc.neopets.com/membership/"><img src="./Neopets - TCG Checklist BfM_files/premium.png" alt="" border="0" width="95" height="38"></a><ul class="dropdown">
+
+						<li><a href="http://nc.neopets.com/membership/">» Become a Member</a></li>
+								</ul>
+	</li>
+</ul>
+</td>
+							<td id="nst">10:02:42 pm NST</td>
+						</tr>
+					</tbody></table>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3" height="3"><img src="./Neopets - TCG Checklist BfM_files/transparent_spacer.gif" width="1" height="3" alt="" border="0"></td>
+			</tr>
+		</tbody></table>
+	</div>
+
+	<div id="content">
+			<table width="100%" cellpadding="0" cellspacing="0" border="0">
+		
+
+		<tbody><tr>
+<td align="center" class="sidebar" width="178">
+<div class="sidebarModule" style="margin-bottom: 7px;">
+	<table width="150" cellpadding="3" cellspacing="0" border="0" class="sidebarTable">
+		<tbody><tr>
+			<td valign="middle" class="sidebarHeader medText"><a href="https://www.neopets.com/quickref.phtml"><b>swifto_8_8</b></a> </td>
+		</tr>
+		<tr>
+			<td class="activePet"><a href="https://www.neopets.com/quickref.phtml"><img src="./Neopets - TCG Checklist BfM_files/2.png" width="150" height="150" border="0" style=""></a></td>
+		</tr>
+		<tr>
+			<td class="activePet sf" align="center"><a href="https://www.neopets.com/customise/?view=swifto_8_8"><b><span class="pointer">»</span> Customise</b></a></td>
+		</tr>
+
+		<tr>
+			<td class="activePetInfo" align="center">
+				<table cellpadding="1" cellspacing="0" border="0">
+					<tbody><tr>
+						<td align="right">Species:</td>
+						<td align="left"><b>JubJub</b></td>
+					</tr>
+
+					<tr>
+						<td align="right">Health:</td>
+						<td align="left"><b><font color="green"><b>151 / 179</b></font></b></td>
+					</tr>
+
+					<tr>
+						<td align="right">Mood:</td>
+						<td align="left"><b>delighted!</b></td>
+					</tr>
+					
+					<tr>
+						<td align="right">Hunger:</td>
+						<td align="left"><b>bloated</b></td>
+					</tr>
+
+					<tr>
+						<td align="right">Age:</td>
+						<td align="left"><b>5,962 days</b></td>
+						</tr>
+
+					<tr>
+						<td align="right">Level:</td>
+						<td align="left"><b>65</b></td>
+					</tr>
+				</tbody></table>
+
+				
+			</td>
+		</tr>
+	</tbody></table>
+</div>
+
+<div class="sidebarModule" style="margin-bottom: 7px;">
+	<table width="158" cellpadding="2" cellspacing="0" border="0" class="sidebarTable">
+		<tbody><tr>
+			<td valign="middle" class="sidebarHeader medText">Search Neopets</td>
+		</tr>
+		<tr>
+			<td class="neofriend" align="center">
+				<form onsubmit="search_handle(this);" style="padding-top: 4px; padding-bottom: 4px;">
+					<input class="sf" type="text" name="q" maxlength="255" value="Enter search text..." style="width: 135px; color: #a5a5a5; padding: 2px;" onfocus="this.style.color=&#39;#000000&#39;; if( this.value==&#39;Enter search text...&#39; ) { this.value=&#39;&#39;; }" onblur="if( this.value==&#39;&#39; ) { this.style.color=&#39;#A5A5A5&#39;; this.value=&#39;Enter search text...&#39;; }"><br>
+					<input type="submit" value="Go!" class="sf">
+					<input type="hidden" name="client" value="pub-9208792519293771">
+					<input type="hidden" name="forid" value="1">
+					<input type="hidden" name="ie" value="ISO-8859-1">
+					<input type="hidden" name="oe" value="ISO-8859-1">
+					<input type="hidden" name="safe" value="active">
+					<input type="hidden" name="domains" value="www.neopets.com">
+					<input type="hidden" name="cof" value="GALT:#FFFFFF;GL:1;DIV:#000066;VLC:FFFFFF;AH:center;BGC:FFFFFF;LBGC:000066;ALC:FFFFFF;LC:FFFFFF;T:000000;GFNT:000066;GIMP:000077;FORID:1">
+					<input type="hidden" name="hl" value="en">
+					<input type="hidden" name="s">
+				</form>
+			</td>
+		</tr>
+	</tbody></table>
+</div>
+<style>
+.neofriendUsername_online{
+	text-align:left;
+	font-size:10px;
+}
+
+
+.button-link-online {
+	padding: 3px 10px;
+	background: #4479BA;
+	color: #FFF !important;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	border: solid 1px #20538D;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+	-webkit-transition-duration: 0.2s;
+	-moz-transition-duration: 0.2s;
+	transition-duration: 0.2s;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+}
+.button-link-online:hover {
+	background: #356094;
+	border: solid 1px #2A4E77;
+	text-decoration: none;
+}
+.button-link-online:active {
+	-webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+	-moz-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+	box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+	background: #2E5481;
+	border: solid 1px #203E5F;
+}
+
+</style>
+<div class="sidebarModule">
+	<table width="158" cellpadding="2" cellspacing="0" border="0" class="sidebarTable">
+		<tbody><tr>
+						<td valign="middle" class="sidebarHeader medText"><a href="https://www.neopets.com/neofriends.phtml"><b>Neofriends</b></a> &nbsp;&nbsp;&nbsp; <a href="https://www.neopets.com/s/index.phtml?track_cat_id=50&amp;item_id=488"><img src="./Neopets - TCG Checklist BfM_files/question_mark.png" width="13" height="13" alt="" border="0" align="absbottom"></a></td>
+		</tr>
+		<tr>
+			<td class="neofriend" align="center">
+
+<br>
+			None of your Neofriends are currently online.  You must be lonely.
+			<br><br>			</td>
+		</tr>
+	</tbody></table>
+</div>
+</td>				<td class="content">
+														<!-- r0 -->
+
+
+
+<b>Neopets TCG</b><br>
+<center>
+<script type="text/javascript" src="./Neopets - TCG Checklist BfM_files/swfobject.js.download"></script>
+<script type="text/javascript">
+var swf = new SWFObject('https://images.neopets.com/tcg/tcg_nav_v1.swf', 'flash_71349243447', '550', '118', '6', '#FFFFFF');
+swf.addParam('quality', 'high');
+swf.addParam('scale', 'exactfit');
+swf.addParam('menu', 'false');
+swf.addParam('allowScriptAccess', 'always');
+swf.addParam('swLiveConnect', 'true');
+swf.addParam('bgcolor', 'white');
+swf.write();
+var flashId = 'flash_71349243447';
+</script>
+<link href="./Neopets - TCG Checklist BfM_files/flash_rip.css" rel="stylesheet" type="text/css">
+		<div class="flashRIP__2020" style="">
+			<div class="flashRIP-content__2020">
+				<div class="flashRIP-imgwrapper__2020"><div class="flashRIP-img__2020"></div></div>
+				<p>Uh oh! Some elements may not display correctly without Flash support. We're hard at work converting this into a more modern &amp; secure format. Thank you for your patience.</p>
+			</div>
+		</div>
+		<script type="text/javascript" src="./Neopets - TCG Checklist BfM_files/flash_rip.js.download"></script>
+</center><br>
+<strong>Neopets TCG Card Checklist</strong><br><br>
+
+<div align="center"><strong>Card Editions:</strong> 
+
+<a href="https://www.neopets.com/tcg/checklist.phtml?edition=1"><strong>First Edition</strong></a> | <a href="https://www.neopets.com/tcg/checklist.phtml?edition=2"><strong>Battle For Meridell</strong></a> | <a href="https://www.neopets.com/tcg/checklist.phtml?edition=3"><strong>Return of Dr. Sloth</strong></a> | <a href="https://www.neopets.com/tcg/checklist.phtml?edition=4"><strong>Mystery Island</strong></a> | <a href="https://www.neopets.com/tcg/checklist.phtml?edition=5"><strong>Promotional</strong></a> | <a href="https://www.neopets.com/tcg/checklist.phtml?edition=6"><strong>Hannah and the Ice Caves</strong></a> | <a href="https://www.neopets.com/tcg/checklist.phtml?edition=7"><strong>Curse of Maraqua</strong></a> | <a href="https://www.neopets.com/tcg/checklist.phtml?edition=8"><strong>Lost Desert</strong></a> | <a href="https://www.neopets.com/tcg/checklist.phtml?edition=9"><strong>Darkest Faerie</strong></a> | <a href="https://www.neopets.com/tcg/checklist.phtml?edition=10"><strong>Travels in Neopia</strong></a> | <a href="https://www.neopets.com/tcg/checklist.phtml?edition=11"><strong>Haunted Woods</strong></a></div><br>		<script type="text/javascript" language="JavaScript">
+			function showCard(EDID, CARDID) {
+				window.open("displayCard.phtml?edid=" + EDID + "&id=" + CARDID, "CardDisplay", "width=300, height=420, location=no, status=no");
+			};
+		</script>
+		<strong>Browsing:</strong> Battle For Meridell		<br><br>
+		Below is the list of cards for this edition.  Select the checkbox if you have it in your collection!  		<form action="https://www.neopets.com/tcg/process_checklist.phtml" method="post">
+		<input type="hidden" name="edition" value="2">
+		<table width="100%" cellpadding="2" cellspacing="0" style="border:1px solid #000000;">
+			<tbody><tr bgcolor="#FFCC00">
+				<td align="center"><strong>Card Number</strong></td>
+				<td align="center"><strong>Card Name</strong></td>
+				<td align="center"><strong>Rarity</strong></td>
+				<td align="center"><strong>Collected</strong></td>
+			</tr>
+
+<tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">1</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 1);"><strong>The Bat-Thing</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">H</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_1"></td><input type="hidden" name="card_id_1" value="1"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">2</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 2);"><strong>The Castle Defender</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">H</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_2"></td><input type="hidden" name="card_id_2" value="2"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">3</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 3);"><strong>Darigan Paint Brush</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">H</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_3"></td><input type="hidden" name="card_id_3" value="3"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">4</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 4);"><strong>Darigan, Redeemed</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">H</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_4"></td><input type="hidden" name="card_id_4" value="4"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">5</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 5);"><strong>Draik Soldier</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">H</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_5"></td><input type="hidden" name="card_id_5" value="5"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">6</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 6);"><strong>Faerie Bottle</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">H</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_6"></td><input type="hidden" name="card_id_6" value="6"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">7</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 7);"><strong>Gallion</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">H</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_7"></td><input type="hidden" name="card_id_7" value="7"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">8</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 8);"><strong>Gelert Prince</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">H</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_8"></td><input type="hidden" name="card_id_8" value="8"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">9</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 9);"><strong>Golden Negg</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">H</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_9"></td><input type="hidden" name="card_id_9" value="9"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">10</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 10);"><strong>Hall of Paintings</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">H</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_10"></td><input type="hidden" name="card_id_10" value="10"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">11</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 11);"><strong>King Skarl</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">H</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_11"></td><input type="hidden" name="card_id_11" value="11"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">12</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 12);"><strong>King Skarl Plushie</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">H</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_12"></td><input type="hidden" name="card_id_12" value="12"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">13</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 13);"><strong>Lisha</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">H</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_13"></td><input type="hidden" name="card_id_13" value="13"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">14</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 14);"><strong>Lisha's Wand</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">H</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_14"></td><input type="hidden" name="card_id_14" value="14"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">15</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 15);"><strong>Lord Kass</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">H</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_15"></td><input type="hidden" name="card_id_15" value="15"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">16</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 16);"><strong>Meridell Castle</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">H</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_16"></td><input type="hidden" name="card_id_16" value="16"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">17</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 17);"><strong>Meridell Gardens</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">H</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_17"></td><input type="hidden" name="card_id_17" value="17"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">18</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 18);"><strong>Mortog</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">H</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_18"></td><input type="hidden" name="card_id_18" value="18"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">19</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 19);"><strong>Nova Storm</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">H</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_19"></td><input type="hidden" name="card_id_19" value="19"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">20</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 20);"><strong>Silver Draik Egg</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">H</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_20"></td><input type="hidden" name="card_id_20" value="20"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">21</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 21);"><strong>Sunblade</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">H</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_21"></td><input type="hidden" name="card_id_21" value="21"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">22</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 22);"><strong>The Three</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">H</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_22"></td><input type="hidden" name="card_id_22" value="22"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">23</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 23);"><strong>Turmaculus</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">H</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_23"></td><input type="hidden" name="card_id_23" value="23"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">24</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 24);"><strong>Uni Battle Steed</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">H</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_24"></td><input type="hidden" name="card_id_24" value="24"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">25</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 25);"><strong>Zafara Princess</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">H</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_25"></td><input type="hidden" name="card_id_25" value="25"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">26</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 26);"><strong>Blue Draik</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">R</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_26"></td><input type="hidden" name="card_id_26" value="26"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">27</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 27);"><strong>Green Draik</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">R</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_27"></td><input type="hidden" name="card_id_27" value="27"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">28</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 28);"><strong>Yellow Grarrl</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">R</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_28"></td><input type="hidden" name="card_id_28" value="28"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">29</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 29);"><strong>Yellow Meerca</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">R</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_29"></td><input type="hidden" name="card_id_29" value="29"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">30</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 30);"><strong>105 Castle Secrets</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">R</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_30"></td><input type="hidden" name="card_id_30" value="30"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">31</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 31);"><strong>Armoury of Kass</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">R</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_31"></td><input type="hidden" name="card_id_31" value="31"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">32</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 32);"><strong>Blugthak</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">R</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_32"></td><input type="hidden" name="card_id_32" value="32"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">33</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 33);"><strong>Blumaroo Court Jester</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">R</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_33"></td><input type="hidden" name="card_id_33" value="33"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">34</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 34);"><strong>Book of Law</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">R</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_34"></td><input type="hidden" name="card_id_34" value="34"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">35</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 35);"><strong>Contest of Champions</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">R</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_35"></td><input type="hidden" name="card_id_35" value="35"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">36</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 36);"><strong>Darigan Gardens</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">R</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_36"></td><input type="hidden" name="card_id_36" value="36"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">37</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 37);"><strong>Dark Nova</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">R</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_37"></td><input type="hidden" name="card_id_37" value="37"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">38</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 38);"><strong>Defenders of Meridell</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">R</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_38"></td><input type="hidden" name="card_id_38" value="38"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">39</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 39);"><strong>Drackonack</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">R</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_39"></td><input type="hidden" name="card_id_39" value="39"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">40</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 40);"><strong>Draik Sentinel</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">R</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_40"></td><input type="hidden" name="card_id_40" value="40"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">41</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 41);"><strong>Draik Skeleton</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">R</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_41"></td><input type="hidden" name="card_id_41" value="41"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">42</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 42);"><strong>Faerie Dust</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">R</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_42"></td><input type="hidden" name="card_id_42" value="42"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">43</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 43);"><strong>Fall of Jeran</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">R</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_43"></td><input type="hidden" name="card_id_43" value="43"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">44</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 44);"><strong>Hadrak</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">R</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_44"></td><input type="hidden" name="card_id_44" value="44"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">45</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 45);"><strong>Ixi Courtier</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">R</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_45"></td><input type="hidden" name="card_id_45" value="45"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">46</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 46);"><strong>Jeran, Meridell Knight</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">R</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_46"></td><input type="hidden" name="card_id_46" value="46"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">47</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 47);"><strong>Jeran Plushie</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">R</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_47"></td><input type="hidden" name="card_id_47" value="47"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">48</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 48);"><strong>Meridell War Room</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">R</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_48"></td><input type="hidden" name="card_id_48" value="48"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">49</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 49);"><strong>NeoQuest Board Game</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">R</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_49"></td><input type="hidden" name="card_id_49" value="49"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">50</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 50);"><strong>Peasant Mob</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">R</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_50"></td><input type="hidden" name="card_id_50" value="50"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">51</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 51);"><strong>Psellia</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">R</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_51"></td><input type="hidden" name="card_id_51" value="51"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">52</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 52);"><strong>Quiggle Runner</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">R</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_52"></td><input type="hidden" name="card_id_52" value="52"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">53</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 53);"><strong>Shadow Armour</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">R</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_53"></td><input type="hidden" name="card_id_53" value="53"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">54</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 54);"><strong>Stone Soup</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">R</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_54"></td><input type="hidden" name="card_id_54" value="54"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">55</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 55);"><strong>Storm the Castle</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">R</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_55"></td><input type="hidden" name="card_id_55" value="55"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">56</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 56);"><strong>Tower Shield</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">R</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_56"></td><input type="hidden" name="card_id_56" value="56"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">57</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 57);"><strong>Whinny</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">R</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_57"></td><input type="hidden" name="card_id_57" value="57"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">58</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 58);"><strong>Yellow Draik Egg</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">R</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_58"></td><input type="hidden" name="card_id_58" value="58"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">59</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 59);"><strong>Zafara Double Agent</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">R</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_59"></td><input type="hidden" name="card_id_59" value="59"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">60</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 60);"><strong>Zombie Moltenore</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">R</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_60"></td><input type="hidden" name="card_id_60" value="60"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">61</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 61);"><strong>Blue Skeith</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">U</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_61"></td><input type="hidden" name="card_id_61" value="61"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">62</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 62);"><strong>Green Poogle</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">U</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_62"></td><input type="hidden" name="card_id_62" value="62"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">63</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 63);"><strong>Red Uni</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">U</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_63"></td><input type="hidden" name="card_id_63" value="63"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">64</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 64);"><strong>Back from the Grave</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">U</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_64"></td><input type="hidden" name="card_id_64" value="64"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">65</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 65);"><strong>Blumaroo Squire</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">U</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_65"></td><input type="hidden" name="card_id_65" value="65"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">66</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 66);"><strong>Bomberry</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">U</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_66"></td><input type="hidden" name="card_id_66" value="66"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">67</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 67);"><strong>Boots of Jumping</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">U</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_67"></td><input type="hidden" name="card_id_67" value="67"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">68</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 68);"><strong>Castle Sanctuary</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">U</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_68"></td><input type="hidden" name="card_id_68" value="68"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">69</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 69);"><strong>Count Boris</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">U</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_69"></td><input type="hidden" name="card_id_69" value="69"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">70</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 70);"><strong>Court Dancer</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">U</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_70"></td><input type="hidden" name="card_id_70" value="70"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">71</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 71);"><strong>Darigan Skeith</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">U</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_71"></td><input type="hidden" name="card_id_71" value="71"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">72</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 72);"><strong>Darigan Uni</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">U</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_72"></td><input type="hidden" name="card_id_72" value="72"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">73</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 73);"><strong>Darigan Usul</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">U</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_73"></td><input type="hidden" name="card_id_73" value="73"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">74</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 74);"><strong>Flying Potion</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">U</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_74"></td><input type="hidden" name="card_id_74" value="74"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">75</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 75);"><strong>Gelert Beast Hunter</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">U</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_75"></td><input type="hidden" name="card_id_75" value="75"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">76</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 76);"><strong>The Great Battle</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">U</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_76"></td><input type="hidden" name="card_id_76" value="76"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">77</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 77);"><strong>Green Paint Brush</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">U</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_77"></td><input type="hidden" name="card_id_77" value="77"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">78</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 78);"><strong>Illusens Glade</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">U</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_78"></td><input type="hidden" name="card_id_78" value="78"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">79</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 79);"><strong>Ixi Raider</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">U</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_79"></td><input type="hidden" name="card_id_79" value="79"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">80</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 80);"><strong>Kacheek Plushie</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">U</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_80"></td><input type="hidden" name="card_id_80" value="80"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">81</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 81);"><strong>Kass Charm</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">U</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_81"></td><input type="hidden" name="card_id_81" value="81"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">82</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 82);"><strong>Kayla</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">U</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_82"></td><input type="hidden" name="card_id_82" value="82"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">83</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 83);"><strong>Marketplace</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">U</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_83"></td><input type="hidden" name="card_id_83" value="83"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">84</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 84);"><strong>Meerca Catapult</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">U</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_84"></td><input type="hidden" name="card_id_84" value="84"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">85</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 85);"><strong>Meerca Spy</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">U</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_85"></td><input type="hidden" name="card_id_85" value="85"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">86</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 86);"><strong>Morguss</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">U</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_86"></td><input type="hidden" name="card_id_86" value="86"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">87</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 87);"><strong>Morris</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">U</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_87"></td><input type="hidden" name="card_id_87" value="87"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">88</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 88);"><strong>Mynci Plushie</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">U</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_88"></td><input type="hidden" name="card_id_88" value="88"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">89</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 89);"><strong>Obedience Broth</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">U</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_89"></td><input type="hidden" name="card_id_89" value="89"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">90</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 90);"><strong>Oubliette</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">U</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_90"></td><input type="hidden" name="card_id_90" value="90"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">91</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 91);"><strong>Plan B</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">U</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_91"></td><input type="hidden" name="card_id_91" value="91"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">92</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 92);"><strong>Quiggle Scout</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">U</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_92"></td><input type="hidden" name="card_id_92" value="92"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">93</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 93);"><strong>Reinforcements</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">U</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_93"></td><input type="hidden" name="card_id_93" value="93"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">94</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 94);"><strong>Shoyru Plushie</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">U</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_94"></td><input type="hidden" name="card_id_94" value="94"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">95</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 95);"><strong>Skarl's Banquet</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">U</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_95"></td><input type="hidden" name="card_id_95" value="95"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">96</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 96);"><strong>Skarl's Personal Guard</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">U</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_96"></td><input type="hidden" name="card_id_96" value="96"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">97</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 97);"><strong>Symol Warrens</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">U</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_97"></td><input type="hidden" name="card_id_97" value="97"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">98</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 98);"><strong>Turdle</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">U</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_98"></td><input type="hidden" name="card_id_98" value="98"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">99</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 99);"><strong>Turmac</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">U</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_99"></td><input type="hidden" name="card_id_99" value="99"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">100</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 100);"><strong>Usul-in-Waiting</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">U</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_100"></td><input type="hidden" name="card_id_100" value="100"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">101</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 101);"><strong>Blue Acara</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">C</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_101"></td><input type="hidden" name="card_id_101" value="101"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">102</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 102);"><strong>Blue Blumaroo</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">C</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_102"></td><input type="hidden" name="card_id_102" value="102"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">103</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 103);"><strong>Blue Gelert</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">C</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_103"></td><input type="hidden" name="card_id_103" value="103"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">104</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 104);"><strong>Blue Uni</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">C</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_104"></td><input type="hidden" name="card_id_104" value="104"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">105</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 105);"><strong>Green Ixi</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">C</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_105"></td><input type="hidden" name="card_id_105" value="105"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">106</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 106);"><strong>Green Quiggle</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">C</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_106"></td><input type="hidden" name="card_id_106" value="106"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">107</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 107);"><strong>Green Skeith</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">C</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_107"></td><input type="hidden" name="card_id_107" value="107"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">108</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 108);"><strong>Green Usul</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">C</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_108"></td><input type="hidden" name="card_id_108" value="108"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">109</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 109);"><strong>Red Ixi</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">C</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_109"></td><input type="hidden" name="card_id_109" value="109"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">110</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 110);"><strong>Red Meerca</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">C</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_110"></td><input type="hidden" name="card_id_110" value="110"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">111</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 111);"><strong>Red Mynci</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">C</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_111"></td><input type="hidden" name="card_id_111" value="111"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">112</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 112);"><strong>Red Usul</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">C</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_112"></td><input type="hidden" name="card_id_112" value="112"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">113</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 113);"><strong>Red Zafara</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">C</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_113"></td><input type="hidden" name="card_id_113" value="113"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">114</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 114);"><strong>Yellow Blumaroo</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">C</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_114"></td><input type="hidden" name="card_id_114" value="114"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">115</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 115);"><strong>Yellow Gelert</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">C</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_115"></td><input type="hidden" name="card_id_115" value="115"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">116</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 116);"><strong>Yellow Quiggle</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">C</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_116"></td><input type="hidden" name="card_id_116" value="116"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">117</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 117);"><strong>Yellow Zafara</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">C</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_117"></td><input type="hidden" name="card_id_117" value="117"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">118</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 118);"><strong>Battle Hammer</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">C</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_118"></td><input type="hidden" name="card_id_118" value="118"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">119</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 119);"><strong>Cheese</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">C</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_119"></td><input type="hidden" name="card_id_119" value="119"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">120</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 120);"><strong>Crop Failure</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">C</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_120"></td><input type="hidden" name="card_id_120" value="120"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">121</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 121);"><strong>Dark Graspberry</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">C</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_121"></td><input type="hidden" name="card_id_121" value="121"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">122</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 122);"><strong>Exploding Acorns</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">C</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_122"></td><input type="hidden" name="card_id_122" value="122"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">123</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 123);"><strong>Feeding Mr. Scary</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">C</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_123"></td><input type="hidden" name="card_id_123" value="123"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">124</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 124);"><strong>Healing Potion</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">C</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_124"></td><input type="hidden" name="card_id_124" value="124"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">125</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 125);"><strong>Lishas Charm</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">C</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_125"></td><input type="hidden" name="card_id_125" value="125"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">126</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 126);"><strong>Locked in the Dungeon</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">C</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_126"></td><input type="hidden" name="card_id_126" value="126"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">127</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 127);"><strong>Makeshift Sword</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">C</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_127"></td><input type="hidden" name="card_id_127" value="127"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">128</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 128);"><strong>Meaty Pie</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">C</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_128"></td><input type="hidden" name="card_id_128" value="128"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">129</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 129);"><strong>Petpet Growth Syrup</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">C</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_129"></td><input type="hidden" name="card_id_129" value="129"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">130</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 130);"><strong>Protect the Village</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">C</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_130"></td><input type="hidden" name="card_id_130" value="130"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">131</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 131);"><strong>Puppyblew</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">C</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_131"></td><input type="hidden" name="card_id_131" value="131"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">132</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 132);"><strong>Regulation Chainmail</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">C</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_132"></td><input type="hidden" name="card_id_132" value="132"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">133</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 133);"><strong>Royal Summons</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">C</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_133"></td><input type="hidden" name="card_id_133" value="133"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">134</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 134);"><strong>Shooting Star</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">C</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_134"></td><input type="hidden" name="card_id_134" value="134"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">135</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 135);"><strong>Stale Bread</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">C</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_135"></td><input type="hidden" name="card_id_135" value="135"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">136</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 136);"><strong>Strawberries</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">C</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_136"></td><input type="hidden" name="card_id_136" value="136"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">137</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 137);"><strong>Symol</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">C</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_137"></td><input type="hidden" name="card_id_137" value="137"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">138</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 138);"><strong>Tangle Net Gun</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">C</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_138"></td><input type="hidden" name="card_id_138" value="138"></tr><tr bgcolor="#F6F6F6"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">139</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 139);"><strong>Tomatoes</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">C</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_139"></td><input type="hidden" name="card_id_139" value="139"></tr><tr bgcolor="#FFFFFF"><td align="center" style="border-top:1px solid #000000; font-weight: normal;">140</td><td style="border-top:1px solid #000000; font-weight: normal;"><a href="javascript:showCard(2, 140);"><strong>Uni Charm</strong></a></td><td align="center" style="border-top:1px solid #000000; font-weight: normal;">C</td><td align="center" style="border-top:1px solid #000000;"><input type="checkbox" name="card_140"></td><input type="hidden" name="card_id_140" value="140"></tr></tbody></table><br><div align="center"><input type="submit" name="submit" value="Save Changes!"></div></form><br clear="all">
+
+										
+				</td>
+			</tr>
+		</tbody></table>
+	</div>
+	<div id="footer">
+		<img src="./Neopets - TCG Checklist BfM_files/3.png" width="200" height="170" alt="" border="0" class="footerNifty">
+		<table width="100%" cellpadding="0" cellspacing="0" border="0" class="footer">
+			<tbody><tr>
+				<td width="175" align="left"><a href="https://www.neopets.com/index.phtml"><img src="./Neopets - TCG Checklist BfM_files/transparent_spacer.gif" width="156" height="46" alt="Neopets.com" border="0"></a></td>
+				<td align="left"><br>
+					<table cellpadding="0" cellspacing="0" border="0">
+						<tbody><tr>
+							<!-- Search -->
+							<td class="sf" valign="middle">
+								<form onsubmit="javascript: search_handle(this);">
+								<table cellpadding="0" cellspacing="0" border="0">
+									<tbody><tr>
+										<td class="footerForm sf" valign="middle"><b>Search Neopets:</b>&nbsp;</td>
+										<td valign="middle"><input class="sf" type="text" name="q" size="25" maxlength="255" value="Enter search text..." style="color: #a5a5a5; padding: 2px;" onfocus="this.style.color=&#39;#000000&#39;; if( this.value==&#39;Enter search text...&#39; ) { this.value=&#39;&#39;; }" onblur="if( this.value==&#39;&#39; ) { this.style.color=&#39;#A5A5A5&#39;; this.value=&#39;Enter search text...&#39;; }">&nbsp;</td>
+										<td valign="middle"><input type="submit" value="Go!" class="sf">
+										<input type="hidden" name="client" value="pub-9208792519293771">
+										<input type="hidden" name="forid" value="1">
+										<input type="hidden" name="ie" value="ISO-8859-1">
+										<input type="hidden" name="oe" value="ISO-8859-1">
+										<input type="hidden" name="safe" value="active">
+										<input type="hidden" name="domains" value="www.neopets.com">
+										<input type="hidden" name="cof" value="GALT:#FFFFFF;GL:1;DIV:#000066;VLC:FFFFFF;AH:center;BGC:FFFFFF;LBGC:000066;ALC:FFFFFF;LC:FFFFFF;T:000000;GFNT:000066;GIMP:000077;FORID:1">
+										<input type="hidden" name="hl" value="en">
+										<input type="hidden" name="s">
+										</td>
+									</tr>
+								</tbody></table>
+								</form>
+							</td>
+							<td width="15">&nbsp;</td>
+							<!-- Language -->
+							<td class="sf" valign="top">
+								<table cellpadding="0" cellspacing="0" border="0">
+									<tbody><tr>
+										<td class="footerForm sf" valign="middle"><form method="post"><b>Select Language:</b>&nbsp;</form></td>
+										<td valign="top">
+											<select name="lang" class="sf"><option value="en" selected="">English</option><option value="nl">Nederlands</option><option value="pt">Português</option><option value="de">Deutsch</option><option value="fr">Français</option><option value="it">Italiano</option><option value="es">Español</option><option value="ch">简体中文</option><option value="zh">繁體中文</option><option value="ja">日本語</option><option value="ko">한국어</option></select>&nbsp;</td>
+										<td valign="top"><input type="submit" value="Go!" class="sf"></td>
+									</tr>
+								</tbody></table>
+							</td>
+						</tr>
+					</tbody></table>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" class="copyright">
+
+					<a href="https://www.neopets.com/privacy.phtml"><img src="./Neopets - TCG Checklist BfM_files/privacypolicy.png" width="81" height="18" border="0" alt="privacypolicy"></a>
+<img src="./Neopets - TCG Checklist BfM_files/divider.png" width="4" height="16" border="0">
+<a href="https://www.neopets.com/safetytips.phtml"><img src="./Neopets - TCG Checklist BfM_files/safetytips.png" width="61" height="18" border="0" alt="safetytips"></a>
+<img src="./Neopets - TCG Checklist BfM_files/divider.png" width="4" height="16" border="0">
+<a href="https://www.neopets.com/aboutus.phtml"><img src="./Neopets - TCG Checklist BfM_files/aboutus.png" width="50" height="18" border="0" alt="aboutus"></a>
+<img src="./Neopets - TCG Checklist BfM_files/divider.png" width="4" height="16" border="0">
+<a href="https://www.neopets.com/refer/index.phtml"><img src="./Neopets - TCG Checklist BfM_files/referral.png" width="98" height="18" border="0" alt="referral"></a>
+<img src="./Neopets - TCG Checklist BfM_files/divider.png" width="4" height="16" border="0">
+<a href="https://www.neopets.com/help.phtml"><img src="./Neopets - TCG Checklist BfM_files/help.png" width="25" height="18" border="0" alt="help"></a>
+					<br>
+					<div class="sf" style="width: 800px;">
+						<div style="position: relative; height: 42px; width: 300px;"></div>						NEOPETS and all related indicia are trademarks of <a href="https://www.neopets.com/aboutus.phtml"><b>Neopets, Inc.</b></a>, © 1999-2023. ® denotes Reg. USPTO. All rights reserved. Use of this site signifies your acceptance of the <a href="https://www.neopets.com/terms.phtml"><b>Terms of Use</b></a>. <a href="https://www.neopets.com/privacy.phtml">Your California Privacy Rights</a>
+
+
+					</div>
+				</td>
+			</tr>
+		</tbody></table>
+	</div>
+
+
+<script language="JavaScript">
+function tzCook() { 
+	var today = new Date();
+	var expire = new Date();
+	expire.setTime(today.getTime() + 3600000*24*30);
+	var cstr = "_tz="+escape(today.getTimezoneOffset()) + ";expires="+expire.toGMTString() + ";path=/;domain=.neopets.com;";
+	document.cookie = cstr;
+}
+tzCook();
+</script>
+</div><div style="display: none" id="logout_nchub"></div>
+<link href="./Neopets - TCG Checklist BfM_files/base.css" rel="stylesheet" type="text/css">
+<script src="./Neopets - TCG Checklist BfM_files/jquery.colorbox.min.js.download" type="text/javascript"></script>
+
+
+
+<div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" style="display: none;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxLoadedContent" style="width: 0px; height: 0px; overflow: hidden; float: left;"></div><div id="cboxLoadingOverlay" style="float: left;"></div><div id="cboxLoadingGraphic" style="float: left;"></div><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><div id="cboxNext" style="float: left;"></div><div id="cboxPrevious" style="float: left;"></div><div id="cboxSlideshow" style="float: left;"></div><div id="cboxClose" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div></div><div id="imageDownloaderSidebarContainer"><div class="image-downloader-ext-container"><div tabindex="-1" class="b-sidebar-outer"><!----><div id="image-downloader-sidebar" tabindex="-1" role="dialog" aria-modal="false" aria-hidden="true" class="b-sidebar shadow b-sidebar-right bg-light text-dark" style="width: 500px; display: none;"><!----><div class="b-sidebar-body"><div></div></div><!----></div><!----><!----></div></div></div></body></html>
