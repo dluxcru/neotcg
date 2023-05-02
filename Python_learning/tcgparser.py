@@ -1,18 +1,16 @@
 from bs4 import BeautifulSoup
 import requests
-
-
-
-#TODO: Github Repo
-
 ##The orginal Neopets JS code for opening a card.
 #function showCard(EDID, CARDID) {
 				# window.open("displayCard.phtml?edid=" + EDID + "&id=" + CARDID, "CardDisplay", "width=300, height=420, location=no, status=no");
 			# };
+from Python_learning.Card import Card
+
+
 def showCard(edID, cardID):
     #TODO: find proper request url. Missing directory path to `displayCard.phtml`.
     # Also determine if this will send an html response to a script. May require workarounds.
-    requestUrl =  "http://www.neopets.com/displayCard.phtml?edid=" + str(edID) + "&id=" + str(cardID)
+    requestUrl =  "http://www.neopets.com/tcg/displayCard.phtml?edid=" + str(edID) + "&id=" + str(cardID)
     return requestUrl
 
 with open("NeopetsTCGChecklist.html", "r", encoding="utf-8") as neotcg:
@@ -37,6 +35,7 @@ for row in rows:
     card_rarity = row_cells[2].string
     rowCard = Card(card_id, 1, card_name)
     print(rowCard)
+    print(showCard(rowCard.edID,rowCard.cardID))
 
 # print(table.tbody)
 
