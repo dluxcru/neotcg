@@ -10,10 +10,11 @@ class Card():
     agility = 0
     magic = 0
     intelligence = 0
-    def __init__(self, cardID, edID, name):
+    def __init__(self, cardID, edID, name, rarity):
         self.cardID = cardID
         self.edID = edID
         self.name = name
+        self.rarity = rarity
         # self.tags = tags
         # self.ruleText = ruleText
         # self.descText = descText
