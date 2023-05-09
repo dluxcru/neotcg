@@ -22,6 +22,9 @@ class Card():
         # self.magic = magic
         # self.intelligence = intelligence
     def __str__(self):
-        return f"{self.cardID} {self.name}"
+        return f"Card ID: {self.cardID} Edition ID: {self.edID} Name: {self.name}"
 
+    def showCard(self):
+        requestUrl =  "http://www.neopets.com/tcg/displayCard.phtml?edid=" + str(self.edID) + "&id=" + str(self.cardID)
+        return requestUrl
 

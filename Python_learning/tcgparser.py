@@ -6,13 +6,6 @@ import requests
 			# };
 from Python_learning.Card import Card
 
-
-def showCard(edID, cardID):
-    #TODO: find proper request url. Missing directory path to `displayCard.phtml`.
-    # Also determine if this will send an html response to a script. May require workarounds.
-    requestUrl =  "http://www.neopets.com/tcg/displayCard.phtml?edid=" + str(edID) + "&id=" + str(cardID)
-    return requestUrl
-
 with open("NeopetsTCGChecklist.html", "r", encoding="utf-8") as neotcg:
     doc = BeautifulSoup(neotcg, "html.parser")
 
@@ -35,8 +28,8 @@ for row in rows:
     card_rarity = row_cells[2].string
     rowCard = Card(card_id, 1, card_name)
     print(rowCard)
-    print(showCard(rowCard.edID,rowCard.cardID))
-
+    #print(showCard(rowCard.edID,rowCard.cardID))
+    print(rowCard.showCard())
 # print(table.tbody)
 
 
